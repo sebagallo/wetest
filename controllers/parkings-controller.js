@@ -1,11 +1,11 @@
 const models = require('../database/models');
 
 exports.getParkingsList = async (request, response) => {
-  response.send(applyBonusToQueueList(await models.Parking.find()));
+  response.send(applyBonusToQueueList(await models.Parking.find().populate({ path: 'queue', populate: { path: 'taxi' } }).exec()));
 };
 
 exports.getParking = async (request, response) => {
-  response.send(applyBonusToQueue(await models.Parking.findById(request.params.id)));
+  response.send(applyBonusToQueue(await models.Parking.findById(request.params.id).populate({ path: 'queue', populate: { path: 'taxi' } }).exec()));
 };
 
 /**
