@@ -1,0 +1,37 @@
+{
+  "plugins": [
+    "promise",
+    "import",
+    "unicorn",
+    "jsdoc"
+  ],
+  "extends": [
+    "eslint:recommended",
+    "airbnb-base",
+    "plugin:promise/recommended",
+    "plugin:unicorn/recommended",
+    "plugin:jsdoc/recommended"
+  ],
+  "env": {
+    "browser": false,
+    "node": true,
+    "es2020": true
+  },
+  "parserOptions": {
+    "ecmaVersion": 2020,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "impliedStrict": true
+    }
+  },
+  "globals": {
+  },
+  "rules": {
+    "no-use-before-define": "off"
+  },
+  "settings": {
+    "jsdoc": {
+      "mode": "closure"
+    }
+  }
+}

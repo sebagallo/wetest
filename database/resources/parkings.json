@@ -1,0 +1,28 @@
+[
+  {
+    "name": "Parcheggio Susa",
+    "location": {
+      "type": "Polygon",
+      "coordinates": [[
+        [-109, 41],
+        [-102, 41],
+        [-102, 37],
+        [-109, 37],
+        [-109, 41]
+      ]]
+    }
+  },
+  {
+    "name": "Parcheggio Nova",
+    "location": {
+      "type": "Polygon",
+      "coordinates": [[
+        [-139, 61],
+        [-132, 61],
+        [-132, 67],
+        [-139, 67],
+        [-139, 61]
+      ]]
+    }
+  }
+]
